@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DiarioEscolar</string>
+    <string name="diary">Diário</string>
+    <string name="school">Escolar</string>
+    <string name="labelStudent">Estudante</string>
+    <string name="labelName">Nome</string>
+    <string name="hintName">Insira o nome</string>
+    <string name="grade_01">Nota 01</string>
+    <string name="grade_02">Nota 02</string>
+    <string name="grade_03">Nota 03</string>
+    <string name="hintGrade">0.0</string>
+    <string name="labelButtonAdd">Adicionar</string>
+
+
+</resources>
