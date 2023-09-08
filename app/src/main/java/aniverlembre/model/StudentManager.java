@@ -7,9 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import aniverlembre.com.diarioescolar.R;
+
 public class StudentManager {
     public static void addStudentList(Context context, Student student) {
-        SharedPreferences sharedPref = context.getSharedPreferences("CONFIGS", Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = context.getSharedPreferences(
+                String.valueOf(R.string.preference_file_key), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
 
         String key = student.name;
@@ -20,7 +23,8 @@ public class StudentManager {
     }
 
     public static List<Student> getStudentList(Context context) {
-        SharedPreferences sharedPref = context.getSharedPreferences("CONFIGS", Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = context.getSharedPreferences(
+                String.valueOf(R.string.preference_file_key), Context.MODE_PRIVATE);
 
         Map<String, ?> allStudent = sharedPref.getAll();
         List<Student> studentList = new ArrayList<>();
@@ -30,9 +34,9 @@ public class StudentManager {
             String value = (String) entry.getValue();
             String[] values = value.split(",");
 
-            float grade01 = Float.parseFloat(values[0]);
-            float grade02 = Float.parseFloat(values[1]);
-            float grade03 = Float.parseFloat(values[2]);
+            String grade01 = String.valueOf(Float.parseFloat(values[0]));
+            String grade02 = String.valueOf(Float.parseFloat(values[1]));
+            String grade03 = String.valueOf(Float.parseFloat(values[2]));
 
             Student student = new Student(key, grade01, grade02, grade03);
             studentList.add(student);

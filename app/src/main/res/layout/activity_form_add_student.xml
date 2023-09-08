@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_300"
+    android:background="@color/green_200"
     tools:context=".FormAddStudent">
 
     <TextView
@@ -132,6 +132,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="48dp"
         android:backgroundTint="@color/blue_800"
+        android:onClick="addStudent"
         android:text="@string/labelButtonAdd"
         android:textColor="@color/gray_100"
         android:textSize="16sp"

@@ -17,6 +17,11 @@
     <color name="blue_600">#FF2196F3</color>
     <color name="blue_800">#FF1976D2</color>
 
+    <color name="green_100">#FF1E6091</color>
     <color name="green_200">#FF115363</color>
     <color name="green_300">#FF0A3F4F</color>
+
+    <color name="red_500">#FFA4133C</color>
+
+    <color name="yellow_500">#FFFFD000</color>
 </resources>
