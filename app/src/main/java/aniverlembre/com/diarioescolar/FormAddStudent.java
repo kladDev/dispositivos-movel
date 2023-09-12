@@ -25,6 +25,11 @@ public class FormAddStudent extends AppCompatActivity {
 
     }
 
+    public void backPage(View v) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
     public void addStudent(View v) {
         EditText editTextName = (EditText) findViewById(R.id.editTextName);
         EditText editTextGrade1 = (EditText) findViewById(R.id.editTextGrade1);

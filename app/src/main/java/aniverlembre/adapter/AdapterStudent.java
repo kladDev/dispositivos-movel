@@ -1,5 +1,7 @@
 package aniverlembre.adapter;
+
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +36,8 @@ import aniverlembre.model.Student;
         holder.grade1.setText(student.n1);
         holder.grade2.setText(student.n2);
         holder.grade3.setText(student.n3);
+        holder.delete.setImageResource(R.drawable.delete);
+        holder.edit.setImageResource(R.drawable.edit);
     }
 
     @Override
@@ -53,11 +57,11 @@ import aniverlembre.model.Student;
         public ViewHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.textName);
-            grade1 = itemView.findViewById(R.id.textGrade1);
-            grade2 = itemView.findViewById(R.id.textGrade2);
-            grade3 = itemView.findViewById(R.id.textGrade3);
-//            delete = itemView.findViewById(R.id.delete);
-//            edit = itemView.findViewById(R.id.edit);
+            grade1 = itemView.findViewById(R.id.textn1);
+            grade2 = itemView.findViewById(R.id.b2);
+            grade3 = itemView.findViewById(R.id.n3);
+            delete = itemView.findViewById(R.id.delete);
+            edit = itemView.findViewById(R.id.edit);
         }
     }
 }

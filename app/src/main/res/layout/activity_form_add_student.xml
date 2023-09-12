@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_900"
+    android:background="@color/blue_600"
     tools:context=".FormAddStudent">
 
     <TextView
@@ -19,17 +19,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!--    <ImageView-->
-    <!--        android:id="@+id/imageView"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="20dp"-->
-    <!--        android:layout_marginTop="40dp"-->
-    <!--        android:onClick="clickIcon"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:srcCompat="@drawable/back" />-->
 
     <View
         android:id="@+id/view2"
@@ -63,39 +52,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <EditText
-        android:id="@+id/editTextGrade1"
-        style="@style/EditText"
-        android:layout_width="96dp"
-        android:hint="@string/hintGrade"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/editTextGrade2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/view3"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
-
-    <EditText
-        android:id="@+id/editTextGrade2"
-        style="@style/EditText"
-        android:layout_width="96dp"
-        android:layout_height="56dp"
-        android:hint="@string/hintGrade"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/editTextGrade3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextGrade1"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
-
-    <EditText
-        android:id="@+id/editTextGrade3"
-        style="@style/EditText"
-        android:layout_width="96dp"
-        android:hint="@string/hintGrade"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/view3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextGrade2"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
 
     <View
         android:id="@+id/view3"
@@ -105,9 +61,9 @@
         android:layout_marginTop="6dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -141,21 +97,74 @@
             android:text="@string/grade_03" />
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:layout_marginTop="40dp"
+        android:onClick="backPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editTextGrade1"
+        style="@style/EditText"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:width="96dp"
+        android:hint="@string/hintGrade"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <EditText
+        android:id="@+id/editTextGrade2"
+        style="@style/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginStart="45dp"
+        android:width="96dp"
+        android:hint="@string/hintGrade"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/editTextGrade1"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <EditText
+        android:id="@+id/editTextGrade3"
+        style="@style/EditText"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="20dp"
+        android:width="96dp"
+        android:hint="@string/hintGrade"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextGrade2"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/blue_600"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="@color/blue_900"
         android:onClick="addStudent"
         android:text="@string/labelButtonAdd"
         android:textColor="@color/gray_100"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGrade2" />
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        tools:layout_editor_absoluteX="81dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

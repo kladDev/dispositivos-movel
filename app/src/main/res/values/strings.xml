@@ -11,6 +11,8 @@
     <string name="grade_03">Nota 03</string>
     <string name="hintGrade">0.0</string>
     <string name="labelButtonAdd">Adicionar</string>
-
-
+    <string name="n1">N1</string>
+    <string name="n2">N2</string>
+    <string name="n3">N3</string>
+    <string name="salve">Salvar</string>
 </resources>
