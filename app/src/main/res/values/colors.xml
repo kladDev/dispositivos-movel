@@ -8,14 +8,27 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="gray_100">#FFF9F9F9</color>
-    <color name="gray_400">#FFD8D8D8</color>
-    <color name="gray_500">#FFBCBCBC</color>
-    <color name="gray_900">#FF282828</color>
+    <color name="gray_50">#fff8f9fa</color>
+    <color name="gray_100">#ffe9ecef</color>
+    <color name="gray_200">#ffdee2e6</color>
+    <color name="gray_300">#ffced4da</color>
+    <color name="gray_400">#ffadb5bd</color>
+    <color name="gray_500">#ff6c757d</color>
+    <color name="gray_600">#ff495057</color>
+    <color name="gray_700">#ff343a40</color>
+    <color name="gray_800">#ff212529</color>
+    <color name="gray_900">#ff111827</color>
 
-    <color name="blue_500">#FF42A5F5</color>
-    <color name="blue_600">#FF2196F3</color>
-    <color name="blue_800">#FF1976D2</color>
+    <color name="blue_50">#ffe3f2fd</color>
+    <color name="blue_100">#ffbbdefb</color>
+    <color name="blue_200">#ff90caf9</color>
+    <color name="blue_300">#ff64b5f6</color>
+    <color name="blue_400">#ff42a5f5</color>
+    <color name="blue_500">#ff2196f3</color>
+    <color name="blue_600">#ff1e88e5</color>
+    <color name="blue_700">#ff1976d2</color>
+    <color name="blue_800">#ff0d47a1</color>
+    <color name="blue_900">#ff0d47a1</color>
 
     <color name="green_100">#FF1E6091</color>
     <color name="green_200">#FF115363</color>

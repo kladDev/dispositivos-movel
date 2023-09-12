@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_200"
+    android:background="@color/blue_900"
     tools:context=".FormAddStudent">
 
     <TextView
@@ -20,16 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:onClick="clickIcon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:onClick="clickIcon"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/back" />-->
 
     <View
         android:id="@+id/view2"
@@ -39,12 +39,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/textView4"
         style="@style/TextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
         android:text="@string/labelName"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2" />
@@ -53,89 +55,107 @@
         android:id="@+id/editTextName"
         style="@style/EditText"
         android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:hint="@string/hintName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView5"
-        style="@style/TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/grade_01"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/editTextGrade1"
         style="@style/EditText"
         android:layout_width="96dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:inputType="numberDecimal"
         android:hint="@string/hintGrade"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView6"
-        style="@style/TextView"
-        android:layout_width="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/grade_02"
-        app:layout_constraintStart_toEndOf="@+id/editTextGrade1"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGrade2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
 
     <EditText
         android:id="@+id/editTextGrade2"
         style="@style/EditText"
         android:layout_width="96dp"
         android:layout_height="56dp"
-        android:layout_marginTop="12dp"
         android:hint="@string/hintGrade"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toStartOf="@+id/editTextGrade3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editTextGrade1"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView7"
-        style="@style/TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/grade_03"
-        app:layout_constraintStart_toEndOf="@+id/editTextGrade2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintTop_toTopOf="@+id/view3" />
 
     <EditText
         android:id="@+id/editTextGrade3"
         style="@style/EditText"
         android:layout_width="96dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
         android:hint="@string/hintGrade"
         android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextGrade2"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="clip_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/grade_01" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TextView"
+            android:layout_weight="2"
+            android:text="@string/grade_02" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/TextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/grade_03" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="@color/blue_800"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/blue_600"
         android:onClick="addStudent"
         android:text="@string/labelButtonAdd"
         android:textColor="@color/gray_100"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGrade2"
-        tools:layout_editor_absoluteX="137dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGrade2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

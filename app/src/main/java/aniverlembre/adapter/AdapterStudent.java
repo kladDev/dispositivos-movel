@@ -3,6 +3,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -46,6 +47,8 @@ import aniverlembre.model.Student;
         public TextView grade1;
         public TextView grade2;
         public TextView grade3;
+        public ImageView delete;
+        public ImageView edit;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -53,6 +56,8 @@ import aniverlembre.model.Student;
             grade1 = itemView.findViewById(R.id.textGrade1);
             grade2 = itemView.findViewById(R.id.textGrade2);
             grade3 = itemView.findViewById(R.id.textGrade3);
+//            delete = itemView.findViewById(R.id.delete);
+//            edit = itemView.findViewById(R.id.edit);
         }
     }
 }

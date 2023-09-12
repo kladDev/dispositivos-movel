@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
         recyclerStudent.setAdapter(studentAdapter);
     }
 
-    public void clickButton(View v) {
+    public void addStudent(View v) {
         Intent intent = new Intent(this, FormAddStudent.class);
         startActivity(intent);
     }

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import aniverlembre.model.Student;
 import aniverlembre.model.StudentManager;
@@ -29,6 +30,7 @@ public class FormAddStudent extends AppCompatActivity {
         EditText editTextGrade1 = (EditText) findViewById(R.id.editTextGrade1);
         EditText editTextGrade2 = (EditText) findViewById(R.id.editTextGrade2);
         EditText editTextGrade3 = (EditText) findViewById(R.id.editTextGrade3);
+
 
         String name = editTextName.getText().toString();
         String grade1 = editTextGrade1.getText().toString();

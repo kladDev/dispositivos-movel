@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">DiarioEscolar</string>
     <string name="preference_file_key">aniverlembre.com.diarioescolar.PREFERENCE_FILE_KEY</string>
-    <string name="diary">Diário</string>
-    <string name="school">Escolar</string>
+    <string name="diary">Class</string>
+    <string name="manager">Manager</string>
     <string name="labelStudent">Estudante</string>
     <string name="labelName">Nome</string>
     <string name="hintName">Insira o nome</string>
