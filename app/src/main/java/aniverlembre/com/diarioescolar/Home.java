@@ -19,7 +19,6 @@ public class Home extends AppCompatActivity {
 
     private StudentManager studentManager;
     private AdapterStudent studentAdapter;
-
     private Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

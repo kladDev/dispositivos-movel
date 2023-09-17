@@ -2,6 +2,7 @@ package aniverlembre.model;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,38 @@ public class StudentManager {
         String value = student.n1 + "," + student.n2 + "," + student.n3;
 
         editor.putString(key, value);
+        editor.apply();
+    }
+    public static void updateStudent(Context context, Student student, String name) {
+        SharedPreferences sharedPref = context.getSharedPreferences(
+                String.valueOf(R.string.preference_file_key), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+
+        String gradesStudent = sharedPref.getString(name, "");
+
+        if (!gradesStudent.isEmpty()) {
+            String[] grades = gradesStudent.split(",");
+
+            if (grades.length >= 3) {
+                grades[0] = String.valueOf(student.n1);
+                grades[1] = String.valueOf(student.n2);
+                grades[2] = String.valueOf(student.n3);
+
+                String updateStudent = String.join(",", grades);
+
+                editor.remove(name);
+                editor.putString(student.name, updateStudent);
+                editor.apply();
+            }
+        }
+    }
+
+    public static void deleteStudent(Context context, String name) {
+        SharedPreferences sharedPref = context.getSharedPreferences(
+                String.valueOf(R.string.preference_file_key), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+
+        editor.remove(name);
         editor.apply();
     }
 
@@ -44,4 +77,14 @@ public class StudentManager {
 
         return studentList;
     }
+
+    public Student getStudentByName(String name, List<Student> students) {
+        for (Student student : students) {
+            if (student.name.equalsIgnoreCase(name)) {
+                return student;
+            }
+        }
+        return null;
+    }
 }
+
